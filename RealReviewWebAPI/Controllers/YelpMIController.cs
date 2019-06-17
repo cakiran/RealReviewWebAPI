@@ -22,7 +22,7 @@ namespace RealReviewWebAPI.Controllers
             if (string.IsNullOrEmpty(location) || string.IsNullOrEmpty(searchstring))
                 return new List<Business>();
             List<Business> lstBusiness = new List<Business>();
-            var client = new Yelp.Api.Client("");
+            var client = new Yelp.Api.Client("<add your yelp api key here>");
             Yelp.Api.Models.SearchRequest searchRequest = new Yelp.Api.Models.SearchRequest();
             searchRequest.Location = location;
             searchRequest.Term = searchstring;
