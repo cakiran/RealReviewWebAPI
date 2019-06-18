@@ -12,5 +12,6 @@ namespace RealReviewWebAPI.Models
         public double Accuracy { get; set; }
         public double AreaUnderROCCurve { get; set; }
         public double F1Score { get; set; }
+        public string Name { get; set; }
     }
 }
